@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="gbk" /> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="robots" content="all">
+<meta name="author" content="Tencent-CP" />
+<meta name="Copyright" content="Tencent" />
+<meta name="description" content="《地下城与勇士》是全球2D横版格斗网络游戏（MMOACT）的先行者。无限连击的动作特性、极富多样化的职业分支、精准的操作与多样化副本体验，让玩家全方位体验打击爽快感。" />
+<meta name="keywords" content="地下城与勇士,DNF,Dungeon&Fighter,DF,D&F,地下城,勇士,名将,三国志,横版,2D,腾讯游戏,免费,ACT,转职,觉醒,冒险家,鬼剑士,格斗,格斗家,神枪手,枪手,圣职,红眼,白手,鬼气,阿修罗,气功师,大枪,漫游,阿拉德" />
+<title>热爱好时光-地下城与勇士官方网站-腾讯游戏</title>
+<!-- 页面设计：cp | 页面制作：cp | 创建：2018-12-18 -->
+<style>
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-weight:normal;font-style:normal;}
+ol,ul{list-style:none;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%;}
+q:before,q:after{content:'';}
+fieldset,img,abbr,acronym{border:0;}
+
+/* basic */
+.c:before,.c:after{content:"";display:table;}
+.c:after{clear:both;}
+.c{zoom:1;}
+body {font:12px/1.5 '\5FAE\8F6F\96C5\9ED1';padding-top:42px;background-color: #c8391b;overflow-x: hidden;}
+a {text-decoration:none;overflow:hidden;}
+a:hover {text-decoration:none;}
+.wrap1{background:url(//game.gtimg.cn/images/dnf/cp/a20190118video/rp1.jpg) no-repeat 50% 0;min-width:1000px;}
+.wrap2{background:url(//game.gtimg.cn/images/dnf/cp/a20190118video/rp2.jpg) no-repeat 50% 2048px;min-width:1000px;}
+.container {width:1000px;margin:0 auto;background:url(//game.gtimg.cn/images/dnf/cp/a20190118video/ct.jpg) no-repeat 50% 0;}
+.hide {display:block;width:0;height:0;overflow:hidden;}
+.pr {position:relative;}
+.pa {position:absolute;}
+.fl {float:left;}
+.fr {float:right;}
+.db {display:block;text-indent:-999em;}
+.sp{background: url(//game.gtimg.cn/images/dnf/cp/a20190118video/sp.png) no-repeat;}
+
+/* footer */
+#afooter{text-align:center; line-height:20px;color: #fff;background-color: #c8391b;padding: 20px 0;}
+#afooter a{ color: #fff;}
+
+.head{background:url(//game.gtimg.cn/images/dnf/cp/a20190118video/hd.jpg) no-repeat 50% 0;height:744px;}
+.logo{width:127px;height:88px;background-position:-740px -307px;left:-80px;top:28px;}
+.logo2{width:232px;height:43px;background-position:-661px -567px;left:46px;top:50px;}
+.btn_box{width:100%;height:75px;text-align:center;left:110px;top:420px;}
+.btn_box a{float:left;width:226px;height:75px;background-position:0 -471px;line-height:75px;font-size:26px;color:#ce210c;font-weight:bold;margin-right:18px;}
+.btns span{display:block;padding-top:6px;line-height:30px;}
+.login_box{font-size:16px;color:#ffedc2;width:100%;left:0;top:535px;line-height:22px;text-align:center;}
+.login_box a{color:#ffedc2;}
+
+.content{background:url(//game.gtimg.cn/images/dnf/cp/a20190118video/ct.jpg) no-repeat 50% 0;padding-bottom:200px;}
+.con1{height:1455px;}
+.tit1{width:865px;height:95px;background-position:0 0;margin:0 auto 105px;}
+.tip_list{font-size:16px;color:#e31820;width:760px;margin:0 auto;line-height:24px;height:105px;}
+.tip_list dt{width:760px}
+.tip_list dd{padding-left:90px;width:670px;}
+.lb_con{width:977px;margin:0 auto;padding-top:34px;padding-bottom:60px;text-align:center;}
+.lb_box{margin:0 10px;width:464px;padding-bottom:20px;border:2px solid #ca2524;}
+.lb_tit,.zx_tit2{width:270px;height:69px;background-position:0 -551px;background-color:#fff8d4;left:50%;margin-left:-135px;top:-35px;font-size:30px;color:#fffad5;font-weight:bold;line-height:69px;}
+.lb_list{padding-top:60px;width:442px;margin:0 auto;padding-bottom:10px;}
+.lb_list li{float:left;margin:0 13px 16px;display:inline;width:195px;height:126px;position:relative;}
+.lb_list li span,.lb_list2 span,.zx_list1 span{position:absolute;width:100%;left:0;bottom:15px;font-size:16px;line-height:18px;color:#fffad5;}
+.btn_lq,.btn_lqs,.btn_vlq,.btn_vlqs{width:212px;height:61px;display:block;margin:0 auto;font-size:28px;font-weight:bold;line-height:60px;position:relative;}
+.btn_lq,.btn_vlq{background-position:-461px -404px;color:#ffea75;}
+.btn_lqs,.btn_vlqs{background-position:0 -770px;color:#fff;}
+.lb_box2{width:953px;height:350px;margin:0 auto;border:2px solid #ca2524;text-align:center;}
+.lb_list2{padding-top:60px;width:920px;margin:0 auto;height:140px;}
+.lb_list2 li{float:left;width:175px;height:126px;position:relative;margin:0 4px;display:inline;}
+
+.con2{height:1615px;}
+.tit2{width:865px;height:95px;background-position:0 -101px;margin:0 auto 125px;}
+.tips{font-size:18px;color:#e31820;line-height:26px;padding-bottom:50px;width:900px;margin:0 auto;}
+.zx_box1{width:953px;padding-bottom:20px;margin:0 auto 70px;border:2px solid #ca2524;text-align:center;}
+.zx_tit1{width:330px;height:69px;background-position:-232px -477px;background-color:#fff8d4;left:50%;margin-left:-165px;top:-35px;font-size:30px;color:#fffad5;font-weight:bold;line-height:69px;}
+.zx_list1{padding-top:60px;width:950px;margin:0 auto;padding-bottom:30px;}
+.zx_list1 li{float:left;width:195px;height:126px;margin:0 21px;display:inline;position:relative;}
+.zx_con{width:956px;margin:0 auto;height:365px;text-align:center;}
+.zx_box2,.zx_box3{width:464px;border:2px solid #ca2524;padding-bottom:30px;position:relative;}
+.zx_box3{margin:0 auto;text-align:center;}
+.zx_tit3{width:290px;height:69px;background-position:-567px -477px;background-color:#fff8d4;left:50%;margin-left:-145px;top:-35px;font-size:30px;color:#fffad5;font-weight:bold;line-height:69px;}
+
+.con3{height:1145px;}
+.tit3{width:865px;height:95px;background-position:0 -202px;margin:0 auto 120px;}
+.dh_txt{text-align:center;height:34px;margin:8px auto;font-size:18px;color:#e31820;}
+.dh_txt_exchange {text-align:center;height:34px;margin-bottom:55px;font-size:18px;color:#e31820;}
+.dh_txt span{display:inline-block;vertical-align:middle;}
+.btn_cx{display:inline-block;width:212px;height:34px;background-position:-431px -569px;line-height:34px;font-size:18px;color:#fffad5;vertical-align:middle;font-weight:bold;}
+.dh_list{width:980px;margin:0 auto;text-align:center;}
+.dh_list li{float:left;width:219px;height:193px;margin:0 11px 120px;display:inline;position:relative;border:2px solid #ca2524;position:relative;}
+.hz_tit{width:195px;height:58px;background-position:-698px -407px;background-color:#fff8d4;left:50%;margin-left:-97px;top:-28px;font-size:24px;color:#fffad5;font-weight:bold;line-height:58px;}
+.dh_list span{position:absolute;width:100%;left:0;bottom:15px;font-size:16px;line-height:18px;color:#bb1f1f;}
+.btn_dh{width:139px;height:46px;background-position:-278px -563px;bottom:-60px;left:50%;margin-left:-70px;font-size:24px;color:#ffea75;font-weight:bold;line-height:46px;}
+
+.tit4{width:660px;height:95px;background-position:0 -303px;margin:0 auto 135px;}
+.rule_list{width:920px;margin:0 auto;font-size:17px;color:#e31820;line-height:28px;}
+.rule_list li{position:relative;padding-left:25px;}
+.rule_list em{position:absolute;left:0;top:0;}
+
+.side_nav{position:fixed;background:url(//game.gtimg.cn/images/dnf/cp/a20190118video/nav.png) no-repeat;width:237px;height:541px;right:15px;top:50%;margin-top:-300px;padding-top:102px;}
+.side_nav a{display:block;width:178px;height:68px;margin:0 auto 30px;overflow:visible;position:relative;}
+.side_nav a:after{content:"";width:174px;height:1px;position:absolute;left:50%;margin-left:-87px;bottom:-15px;background:url(//game.gtimg.cn/images/dnf/cp/a20190118video/line.png) no-repeat;}
+.side_nav .nav5:after{display:none;}
+.nav1{background-position:0 -625px;}
+.nav2{background-position:-182px -625px;}
+.nav3{background-position:-363px -625px;}
+.nav4{background-position:-545px -625px;}
+.nav5{background-position:-727px -625px;}
+.nav1:hover,.nav1.cur{background-position:0 -697px;}
+.nav2:hover,.nav2.cur{background-position:-182px -697px;}
+.nav3:hover,.nav3.cur{background-position:-363px -697px;}
+.nav4:hover,.nav4.cur{background-position:-545px -697px;}
+.nav5:hover,.nav5.cur{background-position:-727px -697px;}
+.btn_cxs{border:none;background:none;text-decoration:underline;color:#ffedc2;font-size:16px;cursor:pointer;outline:none;margin:0 8px;}
+
+.dh_txt strong{font-weight:bold;}
+</style>
+</head>
+<body>
+<div class="wrap1">
+<div class="wrap2">
+<div class="container">
+	<div class="head pr" id="hd" exposure-tag="head,头部">
+		<h1 class="hide">热爱好时光</h1>
+        <a href="//dnf.qq.com/" onclick="PTTSendClick('link','logo','地下城与勇士')" title="地下城与勇士" target="_blank" class="logo sp db pa">地下城与勇士</a>
+        <a href="//film.qq.com/" onclick="PTTSendClick('link','logo2','腾讯视频VIP')" title="腾讯视频" target="_blank" class="logo2 sp db pa">腾讯视频VIP</a>
+        <div class="btn_box pa">
+        	<a onclick="PTTSendClick('btn','down1','下载游戏')" href="//dnf.qq.com/web2015/down.shtml" target="_blank" class="sp"><span>下载游戏</span></a>
+        	<a onclick="PTTSendClick('btn','home','进入官网')" href="//dnf.qq.com/main.shtml" target="_blank" class="sp"><span>进入官网</span></a>
+        	<a onclick="PTTSendClick('btn','down2','下载腾讯视频客户端')" href="//dldir1.qq.com/qqtv/qt/QQliveSetup_20_303.exe" target="_blank" class="sp btns"><span>下载腾讯视频<br />客户端</span></a>
+        </div>
+        <div class="login_box pa">
+        	<!--登录前状态 Start-->
+		    <div id="unlogin" class="login" style="display: block;">
+		        你好，请<a onclick="PTTSendClick('btn','login','登录')" id="btn_qqlogin" href="javascript:void(0)" title="登录">【登录】</a>
+		    </div>
+		    <!--登录前状态 End-->
+		    <!--登录后状态 Start-->
+		    <div id="logined" class="login" style="display: none;  ">
+		        欢迎您，<span id="login_qq_span"></span> 
+		       <a onclick="PTTSendClick('btn','logout','注销')" id="btn_logout" href="javascript:void(0)" title="注销">【注销】</a>
+				<!--查询按钮-->
+				<input class="btn_cxs" id="button_532211" type="button" value="查询个人领取记录" />
+				<div id="spanNotBind_532296">
+					<a href="javascript:amsInit(187796, 532295);">  绑定大区</a>
+				</div>
+				<div id="spanBind_532296" style="display:none">
+					<span id="area_info_532296"></span>
+					<span id="role_info_532296"></span>
+					<a href="javascript:amsInit(187796, 532295);">更改绑定</a>
+				</div>
+		    </div>
+		    <!--登录后状态 End-->
+        </div>
+	</div>
+	<div class="content">
+		<div class="con1" id="c1" exposure-tag="con1,内容1">
+			<h2 class="tit1 sp db">勇士们的见面礼</h2>
+			<dl class="tip_list">
+				<dt>活动期间：1.  2019年1月22日后首次创建DNF的角色玩家即可领取一份新手礼包+热爱徽章。</dt>
+				<dd>2.  2019年1月8日后未登录&角色等级大于40级可领取一份回归礼包+热爱徽章。</dd>
+	            <dd>3.  以上两种类型礼包均单Q限各领取一次。消耗热爱徽章可用于获取更多奖励。</dd>
+	            <dd>4.  活动期间在本页面开通腾讯视频VIP一个月，可获得对应礼包1份，单Q限10次。</dd>
+			</dl>
+			<div class="lb_con c">
+				<div class="lb_box fl pr">
+					<h3 class="lb_tit sp pa">新手礼包</h3>
+					<ul class="lb_list c">
+						<li>
+							<img src="//game.gtimg.cn/images/dnf/cp/a20190118video/lb1.jpg" width="195" height="126" alt="" />
+							<span>黑钻7天*1</span>
+						</li>
+						<li>
+							<img src="//game.gtimg.cn/images/dnf/cp/a20190118video/lb2.jpg" width="195" height="126" alt="" />
+							<span>霸王契约3天</span>
+						</li>
+						<li>
+							<img src="//game.gtimg.cn/images/dnf/cp/a20190118video/lb3.jpg" width="195" height="126" alt="" />
+							<span>远古精灵秘药*2</span>
+						</li>
+						<li>
+							<img src="//game.gtimg.cn/images/dnf/cp/a20190118video/lb4.jpg" width="195" height="126" alt="" />
+							<span>热爱徽章*3</span>
+						</li>
+					</ul>
+					<a onclick="PTTSendClick('btn','lq1','立即领取1')"  id="lq1" href="javascript:amsSubmit(187796,532210);" class="btn_lq sp pa">立即领取</a>
+				</div>
+				<div class="lb_box fr pr">
+					<h3 class="lb_tit sp pa">回归礼包</h3>
+					<ul class="lb_list c">
+						<li>
+							<img src="//game.gtimg.cn/images/dnf/cp/a20190118video/lb5.jpg" width="195" height="126" alt="" />
+							<span>黑钻7天*1</span>
+						</li>
+						<li>
+							<img src="//game.gtimg.cn/images/dnf/cp/a20190118video/lb6.jpg" width="195" height="126" alt="" />
+							<span>星空裂缝通行证*2</span>
+						</li>
+						<li>
+							<img src="//game.gtimg.cn/images/dnf/cp/a20190118video/lb7.jpg" width="195" height="126" alt="" />
+							<span>魔界抗疲劳秘药50点</span>
+						</li>
+						<li>
+							<img src="//game.gtimg.cn/images/dnf/cp/a20190118video/lb8.jpg" width="195" height="126" alt="" />
+							<span>热爱徽章*3</span>
+						</li>
+					</ul>
+					<a onclick="PTTSendClick('btn','lq2','立即领取2')" id="lq2" href="javascript:amsSubmit(187796,532232);" class="btn_lq sp pa">立即领取</a>
+				</div>
+			</div>
+			<div class="lb_box2 c pr">
+				<h3 class="zx_tit1 sp pa">开通腾讯视频VIP</h3>
+				<ul class="lb_list2 c">
+					<li>
+						<img src="//game.gtimg.cn/images/dnf/cp/a20190118video/lb9.jpg" width="175" height="126" alt="" />
+						<span>黑钻30天*1</span>
+					</li>
+					<li>
+						<img src="//game.gtimg.cn/images/dnf/cp/a20190118video/lb10.jpg" width="175" height="126" alt="" />
+						<span>魔界抗疲劳秘药<br />50点</span>
+					</li>
+					<li>
+						<img src="//game.gtimg.cn/images/dnf/cp/a20190118video/lb11.jpg" width="175" height="126" alt="" />
+						<span>超级远古精灵<br />秘药*2</span>
+					</li>
+					<li>
+						<img src="//game.gtimg.cn/images/dnf/cp/a20190118video/lb12.jpg" width="175" height="126" alt="" />
+						<span>凯丽的强化器*5</span>
+					</li>
+					<li>
+						<img src="//game.gtimg.cn/images/dnf/cp/a20190118video/lb13.jpg" width="175" height="126" alt="" />
+						<span>热爱徽章*8</span>
+					</li>
+				</ul>
+				<a onclick="PTTSendClick('btn','lq3','开通腾讯视频VIP立即领取')" id="lq3" href="javascript:amsSubmit(187796,532212);" class="btn_vlq sp">立即领取</a>
+				<div class="dh_txt">
+					<a href="javascript:amsSubmit(187796,536937);" class="btn_cx sp">查询开通VIP月份总数</a>
+					<span>当前开通VIP月份总数:<em id="vipMonth">--</em></span>
+					<span>已领取礼包数:<em id="getVipGifts">0</em></span>
+				</div>
+				<div class="dh_txt"><strong>温馨提醒：</strong>登录此页面的DNF游戏账号与腾讯视频充值账号<strong>务必保持一致</strong>，否则将无法领取奖励。</div>
+				<!--<a href="javascript:;" class="btn_vlqs sp">已领取</a>-->
+			</div>
+		</div>
+		<div class="con2" id="c2" exposure-tag="con2,内容2">
+			<h2 class="tit2 sp db">勇士们的在线礼</h2>
+			<p class="tips">1.每日登录游戏并在线30分钟以上可以领取对应礼包1份，单Q每日限一次，累计在线天数越多可得更多好礼呦。<br />2.在线30分钟请在本页面点击【领取奖励】，不点击领取系统不会自动发放，也不算在累计天数里。<br />3.累计奖励需要在本页面领取对应的天数。</p>
+			<div class="zx_box1 pr">
+				<h3 class="zx_tit1 sp pa">在线30分钟立即领取</h3>
+				<ul class="zx_list1 c">
+					<li>
+						<img src="//game.gtimg.cn/images/dnf/cp/a20190118video/zx1.jpg" width="195" height="126" alt="" />
+						<span>闪亮雷米援助*10</span>
+					</li>
+					<li>
+						<img src="//game.gtimg.cn/images/dnf/cp/a20190118video/zx2.jpg" width="195" height="126" alt="" />
+						<span>魔界抗疲劳秘药20点</span>
+					</li>
+					<li>
+						<img src="//game.gtimg.cn/images/dnf/cp/a20190118video/zx3.jpg" width="195" height="126" alt="" />
+						<span>超级远古精灵秘药*1</span>
+					</li>
+					<li>
+						<img src="//game.gtimg.cn/images/dnf/cp/a20190118video/zx4.jpg" width="195" height="126" alt="" />
+						<span>热爱徽章*1</span>
+					</li>
+				</ul>
+				<a onclick="PTTSendClick('btn','zxlq1','累计在线立即领取1')" id="lq4"  href="javascript:amsSubmit(187796,532233);" class="btn_lq sp pa">立即领取</a>
+			</div>
+			<div class="zx_con c">
+				<div class="zx_box2 fl">
+					<h3 class="zx_tit2 sp pa">累计在线3天领取</h3>
+					<ul class="zx_list1 c">
+						<li>
+							<img src="//game.gtimg.cn/images/dnf/cp/a20190118video/zx5.jpg" width="195" height="126" alt="" />
+							<span>霸王契约7天</span>
+						</li>
+						<li>
+							<img src="//game.gtimg.cn/images/dnf/cp/a20190118video/zx6.jpg" width="195" height="126" alt="" />
+							<span>热爱徽章*3</span>
+						</li>
+					</ul>
+					<a onclick="PTTSendClick('btn','zxlq2','累计在线立即领取2')" id="lq5" href="javascript:amsSubmit(187796,532234);" class="btn_lq sp pa">立即领取</a>
+				</div>
+				<div class="zx_box2 fr">
+					<h3 class="zx_tit2 sp pa">累计在线6天领取</h3>
+					<ul class="zx_list1 c">
+						<li>
+							<img src="//game.gtimg.cn/images/dnf/cp/a20190118video/zx7.jpg" width="195" height="126" alt="" />
+							<span>达人契约7天</span>
+						</li>
+						<li>
+							<img src="//game.gtimg.cn/images/dnf/cp/a20190118video/zx8.jpg" width="195" height="126" alt="" />
+							<span>热爱徽章*6</span>
+						</li>
+					</ul>
+					<a onclick="PTTSendClick('btn','zxlq3','累计在线立即领取3')" id="lq6" href="javascript:amsSubmit(187796,532235);" class="btn_lq sp pa">立即领取</a>
+				</div>
+			</div>
+			<div class="zx_box3">
+				<h3 class="zx_tit3 sp pa">累计在线10天领取</h3>
+				<ul class="zx_list1 c">
+					<li>
+						<img src="//game.gtimg.cn/images/dnf/cp/a20190118video/zx9.jpg" width="195" height="126" alt="" />
+						<span>深渊派对邀请函*300</span>
+					</li>
+					<li>
+						<img src="//game.gtimg.cn/images/dnf/cp/a20190118video/zx10.jpg" width="195" height="126" alt="" />
+						<span>热爱徽章*10</span>
+					</li>
+				</ul>
+				<a onclick="PTTSendClick('btn','zxlq4','累计在线立即领取4')" id="lq7" href="javascript:amsSubmit(187796,532236);" class="btn_lq sp pa">立即领取</a>
+			</div>
+		</div>
+		<div class="con3" id="c3" exposure-tag="con3,内容3">
+			<h2 class="tit3 sp db">勇士们的兑换礼</h2>
+			<div class="dh_txt_exchange">
+				<span>消耗热爱徽章，兑换以下游戏道具，部分道具数量有限，先到先得。</span>
+				<a onclick="PTTSendClick('btn','cx','查询拥有热爱徽章数量')" href="javascript:;" class="btn_cx sp">我的徽章:<em id="medalCount"></em></a>
+			</div>
+			<ul class="dh_list c">
+				<li>
+					<h3 class="hz_tit sp pa">2个热爱徽章</h3>
+					<img src="//game.gtimg.cn/images/dnf/cp/a20190118video/dh1.jpg" width="219" height="191" alt="" />
+					<span>装备品级调整箱*3</span>
+					<a onclick="PTTSendClick('btn','dh1','兑换1')" href="javascript:amsSubmit(187796,532237);" class="btn_dh sp pa">兑换</a>
+				</li>
+				<li>
+					<h3 class="hz_tit sp pa">4个热爱徽章</h3>
+					<img src="//game.gtimg.cn/images/dnf/cp/a20190118video/dh2.jpg" width="219" height="191" alt="" />
+					<span>深渊派对邀请函*150</span>
+					<a onclick="PTTSendClick('btn','dh2','兑换2')" href="javascript:amsSubmit(187796,534340);" class="btn_dh sp pa">兑换</a>
+				</li>
+				<li>
+					<h3 class="hz_tit sp pa">8个热爱徽章</h3>
+					<img src="//game.gtimg.cn/images/dnf/cp/a20190118video/dh3.jpg" width="219" height="191" alt="" />
+					<span>深渊派对邀请函*300</span>
+					<a onclick="PTTSendClick('btn','dh3','兑换3')" href="javascript:amsSubmit(187796,534341);" class="btn_dh sp pa">兑换</a>
+				</li>
+				<li>
+					<h3 class="hz_tit sp pa">20个热爱徽章</h3>
+					<img src="//game.gtimg.cn/images/dnf/cp/a20190118video/dh4.jpg" width="219" height="191" alt="" />
+					<span>普通装扮兑换券*1</span>
+					<a onclick="PTTSendClick('btn','dh4','兑换4')" href="javascript:amsSubmit(187796,534342);" class="btn_dh sp pa">兑换</a>
+				</li>
+				<li>
+					<h3 class="hz_tit sp pa">4个热爱徽章</h3>
+					<img src="//game.gtimg.cn/images/dnf/cp/a20190118video/dh5.jpg" width="219" height="191" alt="" />
+					<span>腾讯视频会员3天</span>
+					<a onclick="PTTSendClick('btn','dh5','兑换5')" href="javascript:amsSubmit(187796,534343);" class="btn_dh sp pa">兑换</a>
+				</li>
+				<li>
+					<h3 class="hz_tit sp pa">8个热爱徽章</h3>
+					<img src="//game.gtimg.cn/images/dnf/cp/a20190118video/dh6.jpg" width="219" height="191" alt="" />
+					<span>5Q币</span>
+					<a onclick="PTTSendClick('btn','dh6','兑换6')" href="javascript:amsSubmit(187796,534425);" class="btn_dh sp pa">兑换</a>
+				</li>
+				<li>
+					<h3 class="hz_tit sp pa">3个热爱徽章</h3>
+					<img src="//game.gtimg.cn/images/dnf/cp/a20190118video/dh7.jpg" width="219" height="191" alt="" />
+					<span>星空深渊灵石*1</span>
+					<a onclick="PTTSendClick('btn','dh7','兑换7')" href="javascript:amsSubmit(187796,534344);" class="btn_dh sp pa">兑换</a>
+				</li>
+				<li>
+					<h3 class="hz_tit sp pa">1个热爱徽章</h3>
+					<img src="//game.gtimg.cn/images/dnf/cp/a20190118video/dh8.jpg" width="219" height="191" alt="" />
+					<span>视频VIP13元优惠券</span>
+					<a onclick="PTTSendClick('btn','dh8','兑换8')" href="javascript:amsSubmit(187796,535260);" class="btn_dh sp pa">兑换</a>
+				</li>
+			</ul>
+		</div>
+		<div class="con4" id="c4" exposure-tag="con4,内容4">
+			<h2 class="tit4 sp db">活动规则</h2>
+			<ul class="rule_list c">
+				<li><em>1. </em>活动时间：2019年1月22日~2019年2月18日；</li>
+				<li><em>2. </em>活动期间，2019年1月22日后首次创建DNF的角色玩家即可领取一份新手礼包+热爱徽章。2019年1月8日后未登录&角色等级大于40级可领取一份回归礼包+热爱徽章.以上两种类型礼包均单Q限各领取一次。消耗热爱徽章可用于获取更多奖励。</li>
+				<li><em>3. </em>活动期间：每日登录游戏并在线30分钟以上可以领取对应礼包1份，单Q每日限一次，累计在线可得更多对应礼包。</li>
+				<li><em>4. </em>温馨提示：在本页面开通腾讯视频VIP时，仅限通过Q点Q币/财付通/网银/微信支付等预付费方式支付的用户可以领取礼包。通过手机话费、短信方式开通的用户无法领取礼包。</li>
+				<li><em>5. </em>因活动及其规则产生任何争议，用户与举办方友好协商解决，如若协商不成，用户和举办方均同意将争议提交至举办方即腾讯公司所在地人民法院诉讼解决，因本活动及其规则的一切事宜均适用于中华人民共和国法律。</li>
+			</ul>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<div class="side_nav">
+	<a href="#c1" onclick="PTTSendClick('btn','nav1','勇士们的见面礼')" class="sp db nav1">勇士们的见面礼</a>
+	<a href="#c2" onclick="PTTSendClick('btn','nav2','勇士们的在线礼')" class="sp db nav2">勇士们的在线礼</a>
+	<a href="#c3" onclick="PTTSendClick('btn','nav3','勇士们的兑换礼')" class="sp db nav3">勇士们的兑换礼</a>
+	<a href="#c4" onclick="PTTSendClick('btn','nav4','活动规则')" class="sp db nav4">活动规则</a>
+	<a href="#hd" onclick="PTTSendClick('btn','nav5','回到顶部')" class="sp db nav5">top</a>
+</div>
+
+<!--对话框容器模板-->
+<script id="tpl_dialog_532211" type="text/tempalate">
+		<p class="p_tips_bar"><strong>温馨提示</strong>：虚拟道具奖品将在24小时内发到您的游戏内仓库，请耐心等候，谢谢您的理解与支持！</p>
+		<table class="lz_act_pop_table">
+			<thead>
+				<tr>
+						<th style="width:25%">获奖时间</th>
+						<th style="width:25%">获奖大区</th>
+						<th style="width:25%">所获礼包</th>
+						<th style="width:25%">状态</th>
+				</tr>
+			</thead>
+			<tbody id="tbody_532211"></tbody>
+			 <tfoot id="tfoot_532211"></tfoot>
+		</table>
+</script>
+
+<!--表单内容主体模板-->
+<script id="tpl_tbody_532211" type="text/tempalate">
+	 {if pageData.iRet!='0'}
+		<tr>
+			<td colspan="4" align="center">${pageData.sMsg}</td>
+		</tr>
+	{else}
+		 {for giftInfo in pageData.myGiftList }
+			<tr>
+				<td>${giftInfo.dtGetPackageTime}</td>
+				<td>${giftInfo.areaName}</td>
+				<td>${giftInfo.sPackageName}
+				 {if giftInfo.sCdkey!=""}
+				  <br/>cdkey:${giftInfo.sCdkey}<a href="//film.qq.com/duihuan.html?cdkey=${giftInfo.sCdkey}" target="_blank">兑换</a>
+				 {/if}
+				</td>
+				<td >
+				   {if giftInfo.iStatus=='0'}
+					 成功
+					{else}
+					   {if giftInfo.itemList}
+							 <div>
+							   {for item in giftInfo.itemList}
+								 {if item.iItemStatus=='0'}
+								   <span style="color:green;">${item.sItemName}(${item.iItemNum}) 已发货 </span><br>
+								 {else}
+								   <span style="color:#aaa;">${item.sItemName}(${item.iItemNum}) 发货中 </span><br>
+								 {/if}
+							   {/for}
+							 </div>
+
+						{else}
+							发货中
+						{/if}
+					{/if}
+
+				</td>
+			</tr>
+		 {forelse}
+			 <tr>
+				<td colspan="4" align="center">您尚未获得任何礼包</td>
+			 </tr>
+		{/for}
+	{/if}
+</script>
+
+<!--底部翻页模板-->
+<script id="tpl_tfoot_532211" type="text/tempalate">
+	<tr>
+		<td class="page" colspan="4"><a href="javascript:void(0);" id="prevbtn_532211" title="上一页">上一页</a>
+		<span class="page_num"><em class="now_page"  id="currPage_532211">${pageData.pageNow}</em class="total_page" id="totalPage_532211">/<em>${pageData.pageTotal}</em></span>
+		<a href="javascript:void(0);"  id="nextbtn_532211" title="下一页">下一页</a>
+		</td>
+	</tr>
+</script>
+
+<!-- 头底 -->
+<script type="text/javascript" src="//ossweb-img.qq.com/images/dnf/js/title/dnf.js"></script>
+<script type="text/javascript" src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="//dnf.qq.com/web2015/js/act_nav.js"></script>
+<script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
+<script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+<script>
+$("body").append('<div class="nav_menu"><div class="nva_shts"><a href="//kf.qq.com/faq/150630neeUjM160607AzmEfm.html" target="_blank"></div></div>')
+$(".nav_menu").css({'position':'fixed','bottom':'10px','right':'10px','z-index':'1','width':'134px','height':'35px','background':'url(//game.gtimg.cn/images/dnf/cp/a20160630spear2nd/nav_menu.png) no-repeat'})
+$(".nva_shts a").css({'height':'35px','display':'block'})
+//右侧导航
+$(window).scroll(scrolls);
+scrolls();
+var c1=$("#c1").offset().top,
+	c2=$("#c2").offset().top,
+	c3=$("#c3").offset().top,
+	c4=$("#c4").offset().top-200,
+	hd=$("#hd").offset().top;
+function scrolls() {
+	var s=$(window).scrollTop();
+    $('.side_nav a').removeClass('cur');
+    if(s>=c1 && s<c2){
+		$('.side_nav a').eq(0).addClass('cur');
+	}else if(s>=c2 && s<c3){
+		$('.side_nav a').eq(1).addClass('cur');
+	}else if(s>=c3 && s<c4){
+		$('.side_nav a').eq(2).addClass('cur');
+	}else if(s>=c4){
+		$('.side_nav a').eq(3).addClass('cur');
+	}
+}
+$(".side_nav a").click(function() {
+	$("html, body").animate({
+	  scrollTop: $($(this).attr("href")).offset().top + "px"
+	}, {
+		  duration: 500,
+		  easing: "swing"
+    });
+    return false;
+});
+//登录
+milo.ready(function () {
+    need("biz.login",function(LoginManager){
+        //QQ登录
+        milo.addEvent(g('btn_qqlogin'),'click',function(e){
+            LoginManager.login();
+        });
+        //注销
+        milo.addEvent(g("btn_logout"),"click",function(){
+            LoginManager.logout();
+        })
+        var chkLoginFunc=function(str){
+            LoginManager.checkLogin(function(){
+                console.log("已登录: "+str);
+            },function(){
+                console.log("未登录: "+str);
+            })
+        }
+        //执行验证登陆操作
+        LoginManager.checkLogin(function(userinfo){
+            //此处返回用户的基本信息
+            console.log("已登录：\n",userinfo);
+            //如果登陆类型是qq，使用LoginManager.getUserFace方法去获取头像
+            if (userinfo.logtype=="qq"){
+                LoginManager.getUserFace(function(data){
+                    $("#ams_user_headimg").html("<img src=\""+data.userFace+"\"> ");
+                });
+            }else if(userinfo.logtype=="wx"){
+                //如果登陆类型是wx微信，就直接获取基本信息里的头像
+                $("#ams_user_headimg").html("<img src=\""+userinfo.headimgurl+"/64\"> ");
+            }
+
+        },function(){
+            console.log("未登录");
+            //LoginManager.init();
+        });
+    });
+});
+</script>
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script charset="utf-8" src="//vm.gtimg.cn/tencentvideo_v1/script/txv.core.js  "></script>
+<script charset="utf-8" src="//vm.gtimg.cn/tencentvideo_v1/js/film/ipay_v3/api/minipay.openapi.min.js"></script>
+<script>
+//此段代码不能放到外链JS中，
+var setSite={ //设置网站属性 
+    siteType:"a20190118video", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx 
+    pageType:"index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN 
+    pageName:"首页", //必填项:页面中文名 
+    project:"other", //选填项:如果是官网模块则是必填;按照模块内容，填写固定的对应值;原生官网base;微社区ingame;同人站doujin;赛事match;故事站story;文化站history;粉丝站fans;爆料站coming;论坛bbs;默认other;
+    osact:0 //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+};
+if(typeof(pgvMain)=='function')pgvMain();//千万不能忘记！
+</script>
+<script>var g_favorActId=16459;</script>
+<script src="js/index.js"></script>
+</body>
+</html>
